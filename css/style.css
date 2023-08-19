@@ -1,0 +1,119 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap'); 
+
+:root {
+  --clr-primary: hsl(4, 100%, 67%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(231, 7%, 60%);
+  --clr-charcoal-grey: hsl(235, 18%, 26%);
+  --clr-dark-grey:hsl(234, 29%, 20%);
+
+  --clr-btn-gradient: linear-gradient(225deg, #FF6A3A 0%, #FF527B 100%);
+  
+  --btn-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+  --box-shadow:  0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+
+  --font-family: 'Roboto';
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-small: .75rem; 
+  --fs-text: 1rem;
+  --fs-title: 3.5rem;
+
+  --btn-br: 0.5rem;
+  --box-br: 2.25rem;
+  --line-height: 1.5rem;
+}
+
+*, ::after, ::before {
+  font-family: var(--font-family);
+  font-size: var(--fs-text);
+  color: var(--clr-dark-grey);
+  line-height: var(--line-height);
+
+}
+
+@media (min-width: 600px) {
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+}
+
+body {
+  background-color: hsla(234, 17%, 26%, 1);
+}
+
+.main-wrapper {
+  padding: 1.5rem;
+  border-radius: var(--box-br);
+  display: flex;
+  background-color: var(--clr-white);
+
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 1.5rem;
+
+}
+
+.content-wrapper h1 {
+  font-size: var(--fs-title);
+  font-weight: var(--fw-bold);
+  color: var(--clr-dark-grey);
+  margin-bottom: 1.5rem;
+
+}
+
+ .points {
+  list-style-image: url(/assets/images/icon-list.svg);
+  margin-left: -1rem;
+}
+
+.points li {
+  margin-bottom: .5rem;
+}
+
+
+.email {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.email p {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-bold);
+
+}
+
+.email button {
+  background-color: var(--clr-dark-grey);
+  color: var(--clr-white);
+  border-radius: var(--btn-br);
+  font-weight: var(--fw-bold);
+  padding: 1rem 4rem;
+  margin-top: 1rem;
+  border: 0;
+}
+
+.email button:hover {
+  cursor: pointer;
+  background-color: var(--clr-primary);
+  box-shadow: var(--btn-shadow);
+}
+
+.email input {
+  padding: 1rem 7rem 1rem 1rem;
+  margin-top: .5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--grey-25, rgba(25, 24, 43, 0.25));
+  background-color: inherit;
+  cursor: pointer;
+}
+
